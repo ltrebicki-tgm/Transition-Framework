@@ -6,24 +6,25 @@
     android:layout_height="match_parent" >
 
     <TextView
-        android:id="@+id/text_view2"
+        android:id="@+id/text_view3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        android:text="Text ZWEI"
+        android:text="Jetzt geht es"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/text_view1"
+        android:id="@+id/text_view4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="24dp"
-        android:text="Text EINS"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_marginEnd="24dp"
+        android:text="kreuz und quer weiter"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view3" />
 
     <Button
         android:id="@+id/button2"
@@ -34,7 +35,8 @@
         android:text="Zu Scene 2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.73"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.77" />
+        app:layout_constraintVertical_bias="0.89" />
 </androidx.constraintlayout.widget.ConstraintLayout>

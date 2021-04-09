@@ -5,6 +5,6 @@
         <item>Change Bounds</item>
         <item>Fade</item>
         <item>Explode</item>
-        <item>Slide</item>
+        <item>Slide (Random)</item>
     </string-array>
 </resources>

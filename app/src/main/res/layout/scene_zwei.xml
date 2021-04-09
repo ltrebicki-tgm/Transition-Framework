@@ -6,22 +6,24 @@
     android:layout_height="match_parent" >
 
     <TextView
-        android:id="@+id/text_view2"
+        android:id="@+id/text_view5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="24dp"
-        android:text="Text ZWEI"
-        app:layout_constraintBottom_toTopOf="@+id/text_view1"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Oben links"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/text_view1"
+        android:id="@+id/text_view6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="24dp"
-        android:text="Text EINS"
+        android:text="Unten rechts"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

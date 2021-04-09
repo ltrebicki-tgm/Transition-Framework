@@ -6,17 +6,18 @@
     android:layout_height="match_parent" >
 
     <TextView
-        android:id="@+id/text_view1"
+        android:id="@+id/text_view7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
-        android:text="Text EINS"
+        android:text="Nur noch ein Text"
+        android:textAppearance="@android:style/TextAppearance.Material.Body1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/button8"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:background="#FDD835"

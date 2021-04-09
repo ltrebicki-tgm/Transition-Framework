@@ -21,6 +21,8 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     private Scene scene_anfang = null;
     private Scene scene1 = null;
@@ -38,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.spinner, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
+        spinner.setPrompt("Transition wählen");
         spinner.setOnItemSelectedListener(this);
 
 
@@ -88,6 +91,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     }
 
     public Transition get_transition_type() {
+
         switch(current_choice) {
             case "Auto Transition":
                 return new AutoTransition();
@@ -97,8 +101,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 return new Fade();
             case "Explode":
                 return new Explode();
-            case "Slide":
-                return new Slide(Gravity.END);
+            case "Slide (Random)":
+                int[] gravity_arr = {Gravity.START, Gravity.END, Gravity.TOP, Gravity.BOTTOM};
+                return new Slide(gravity_arr[new Random().nextInt(gravity_arr.length)]);
         }
         return new AutoTransition();
     }
