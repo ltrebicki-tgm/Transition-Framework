@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">TransitionsEK</string>
+    <string-array name="spinner">
+        <item>Auto Transition</item>
+        <item>Change Bounds</item>
+        <item>Fade</item>
+        <item>Explode</item>
+        <item>Slide</item>
+    </string-array>
 </resources>
